@@ -20,6 +20,7 @@ public class RootConfig {
 		hikariConfig.setJdbcUrl("jdbc:oracle:thin:@localhost:49161:XE");
 		hikariConfig.setUsername("book_ex");
 		hikariConfig.setPassword("book_ex");
+		
 		HikariDataSource dataSource = new HikariDataSource(hikariConfig);
 		
 		return dataSource;

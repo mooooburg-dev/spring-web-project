@@ -130,6 +130,14 @@
 		    <version>5.2.4.RELEASE</version>
 		    <scope>test</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.zaxxer/HikariCP -->
+		<dependency>
+		    <groupId>com.zaxxer</groupId>
+		    <artifactId>HikariCP</artifactId>
+		    <version>3.4.2</version>
+		</dependency>
+				
 				    
 	</dependencies>
     <build>
