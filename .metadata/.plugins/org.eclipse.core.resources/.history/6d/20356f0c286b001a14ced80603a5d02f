@@ -1,0 +1,15 @@
+package org.zrock.persistence;
+
+import javax.sql.DataSource;
+
+import lombok.Setter;
+
+public class DataSourceTest {
+	
+	@Setter(onMethod_ = {@AutoWired})
+	private DataSource dataSource;
+	
+	public void testConnection() {
+		
+	}
+}
