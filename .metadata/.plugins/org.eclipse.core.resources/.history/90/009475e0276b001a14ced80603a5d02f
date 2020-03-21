@@ -1,8 +1,0 @@
-package org.zrock.persistence;
-
-import javax.sql.DataSource;
-
-public class DataSourceTest {
-
-	private DataSource dataSource;
-}

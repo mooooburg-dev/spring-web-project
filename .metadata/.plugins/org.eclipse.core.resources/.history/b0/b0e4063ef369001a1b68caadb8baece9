@@ -1,7 +1,0 @@
-package org.zerock.sample;
-
-import org.junit.runner.RunWith;
-
-public class SampleTests {
-
-}

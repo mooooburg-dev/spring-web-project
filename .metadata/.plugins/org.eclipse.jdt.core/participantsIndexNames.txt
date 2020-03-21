@@ -1,5 +1,0 @@
-INDEX VERSION 1.131
-/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2485023825.index
-/ex00/src/main/java
-/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1630507530.index
-/jex00/src/main/java

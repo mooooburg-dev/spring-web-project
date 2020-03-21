@@ -1,8 +1,0 @@
-package org.zrock.persistence;
-
-import lombok.extern.log4j.Log4j;
-
-@Log4j
-public class JDBCTest {
-
-}
