@@ -2252,3 +2252,327 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:39:56.474
 !MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:44:50.163
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:44:50.164
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:44:50.168
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:44:50.169
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:44:50.169
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:44:50.193
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:16.777
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:16.778
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:16.780
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:16.782
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:16.782
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:16.787
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:19.167
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:19.169
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:19.172
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:19.173
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:19.173
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:19.192
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:47.282
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:47.283
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:47.288
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:47.289
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:47.289
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:45:47.294
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:56.912
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:56.914
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:56.916
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:56.918
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:56.919
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:56.950
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:58.114
+!MESSAGE Preparing classpath changed notification jex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:58.115
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:58.117
+!MESSAGE classpath=44 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:58.118
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz jex00 false 44
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:58.119
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:58.131
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:59.757
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:59.757
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:59.762
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:59.764
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:59.765
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:46:59.780
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:01.018
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:01.019
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:01.021
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:01.023
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:01.023
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:01.028
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:09.285
+!MESSAGE Preparing classpath changed notification jex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:09.286
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:09.289
+!MESSAGE classpath=44 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:09.291
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz jex00 false 44
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:09.291
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:10.247
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:10.678
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:10.679
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:10.682
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:10.683
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:10.683
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:10.693
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:14.562
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:14.563
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:14.565
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:14.566
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:14.568
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:14.573
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:20.099
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:20.100
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:20.102
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:20.103
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:20.104
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:20.188
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:25.431
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:25.432
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:25.435
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:25.437
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:25.438
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:47:25.447
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:01.277
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:01.278
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:01.281
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:01.282
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:01.283
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:01.304
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:46.633
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:46.634
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:46.636
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:46.637
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:46.638
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:48:46.644
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:06.862
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:06.865
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:06.867
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:06.869
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:06.869
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:06.873
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:19.165
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:19.165
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:19.170
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:19.171
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:19.171
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:49:19.175
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:50:47.697
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:50:47.698
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:50:47.700
+!MESSAGE classpath=49 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:50:47.701
+!MESSAGE buffering callback sts4.classpath.VhtPHTvz ex00 false 48
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:50:47.702
+!MESSAGE executing callback sts4.classpath.VhtPHTvz 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-21 12:50:47.707
+!MESSAGE executing callback sts4.classpath.VhtPHTvz SUCCESS [done]
