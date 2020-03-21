@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+502117279.index
+708212558.index
+994001194.index
+1744003908.index
+2072689708.index
+1962529044.index
+3832945942.index

@@ -1,0 +1,12 @@
+package org.zerock.sample;
+
+import org.junit.runner.RunWith;
+
+import lombok.extern.log4j.Log4j;
+
+
+
+@Log4j
+public class SampleTests {
+
+}
