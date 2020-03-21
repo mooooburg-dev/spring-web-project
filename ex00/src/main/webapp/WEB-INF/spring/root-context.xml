@@ -18,6 +18,10 @@
 		<constructor-arg ref="hikariConfig"></constructor-arg>
 	</bean>
 	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	
 	<context:component-scan base-package="org.zerock.sample"></context:component-scan>
 		
 </beans>
