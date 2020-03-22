@@ -17,6 +17,25 @@
 			select system.seq_board.nextval from dual
 		</selectKey>
 		insert into system.tbl_board (bno, title, content, writer)
-		value (#{bno}, #{title}, #{content}, #{writer})
+		values (#{bno}, #{title}, #{content}, #{writer})
 	</insert>
+	
+	<select id="read" resultType="org.zerock.domain.BoardVO">
+		select * from system.tbl_board where bno = #{bno} 
+	</select>
+	
+	<delete id="delete">
+		delete from system.tbl_board where bno = #{bno}
+	</delete>
+
+	<update id="update">
+		update system.tbl_board
+		set title = #{title},
+		content = #{content},
+		writer = #{writer},
+		updateDate = sysdate
+		where bno = #{bno}
+	</update>
+
 </mapper>
+
