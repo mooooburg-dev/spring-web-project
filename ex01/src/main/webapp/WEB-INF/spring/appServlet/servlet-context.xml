@@ -29,7 +29,9 @@
 		<beans:property name="maxInMemorySize" value="1048756"></beans:property>	
 	</beans:bean>
 	
-	<context:component-scan base-package="org.zerock.controller" />
+	<context:component-scan base-package="org.zerock.controller"></context:component-scan>
+	
+	<context:component-scan base-package="org.zerock.exception"></context:component-scan>
 	
 	
 	
