@@ -21,7 +21,7 @@
 	</insert>
 	
 	<select id="read" resultType="org.zerock.domain.BoardVO">
-		select * from system.tbl_board where bno = #{bno} 
+		select * from system.tbl_board where bno = #{bno}
 	</select>
 	
 	<delete id="delete">
