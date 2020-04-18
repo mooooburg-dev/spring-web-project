@@ -7,6 +7,22 @@
 		]]>
 	</select>
 	
+	<select id="getListWithPaging" resultType="org.zerock.domain.BoardVO">
+		<![CDATA[
+		select
+			bno, title, content, writer, regdate, updatedate
+		from
+			(
+			select /*+ INDEX_DESC(tbl_board pk_board) */
+				rownum rn, bno, title, content, writer, regdate, updatedate
+			from
+				system.tbl_board
+			where rownum <= #{pageNum} * #{amount}
+			)
+		where rn > (#{pageNum} -1) * #{amount}
+		]]>
+	</select>
+	
 	<insert id="insert">
 		insert into system.tbl_board (bno, title, content, writer)
 		values (system.seq_board.nextval, #{title}, #{content}, #{writer})
