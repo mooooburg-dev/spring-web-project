@@ -28,6 +28,18 @@
 		$('#regBtn').on("click", function(){
 			self.location = "/board/register";
 		});
+
+		//
+		var actionForm = $("#actionForm");
+
+		$('.paginate_button a').on('click', function(e){
+			e.preventDefault();
+
+			console.log('click');
+
+			actionForm.find("input[name='pageNum']").val($(this).attr("href"));
+			actionForm.submit();
+		})
 	});
 </script>
 	<div class="row">
@@ -90,6 +102,11 @@
 	                			</li>
 	                		</c:if>
 	                	</ul>
+	                	
+	                	<form id="actionForm" action="/board/list" method="get">
+	                		<input type="hidden" name="pageNum" value="${pageMaker.cri.pageNum }">
+	                		<input type="hidden" name="amount" value="${pageMaker.cri.amount }">
+	                	</form>
 	                </div>
 	                <!-- end Pagination -->
 	                
