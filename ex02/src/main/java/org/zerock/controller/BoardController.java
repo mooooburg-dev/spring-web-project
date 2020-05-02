@@ -73,10 +73,15 @@ public class BoardController {
 			rttr.addFlashAttribute("result", "success");
 		}
 		
-		rttr.addAttribute("pageNum", cri.getPageNum());
-		rttr.addAttribute("amount", cri.getAmount());
+//		rttr.addAttribute("pageNum", cri.getPageNum());
+//		rttr.addAttribute("amount", cri.getAmount());
+//		rttr.addAttribute("type", cri.getType());
+//		rttr.addAttribute("keyword", cri.getKeyword());
+//		
+//		return "redirect:/board/list";
 		
-		return "redirect:/board/list";
+	
+		return "redirect:/board/list" + cri.getListLink();	// getListLink() 메서드를 이용하면 위 코드를 이렇게 바꿀 수 있다
 	}
 	
 	@PostMapping("/remove")
@@ -88,10 +93,14 @@ public class BoardController {
 			rttr.addFlashAttribute("result", "success");
 		}
 		
-		rttr.addAttribute("pageNum", cri.getPageNum());
-		rttr.addAttribute("amount", cri.getAmount());
+//		rttr.addAttribute("pageNum", cri.getPageNum());
+//		rttr.addAttribute("amount", cri.getAmount());
+//		rttr.addAttribute("type", cri.getType());
+//		rttr.addAttribute("keyword", cri.getKeyword());
+//		
+//		return "redirect:/board/list";
 		
-		return "redirect:/board/list";
+		return "redirect:/board/list" + cri.getListLink();	// getListLink() 메서드를 이용하면 위 코드를 이렇게 바꿀 수 있다
 	}
 	
 	@GetMapping("/register")
