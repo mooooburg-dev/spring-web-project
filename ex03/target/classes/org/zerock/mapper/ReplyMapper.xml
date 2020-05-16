@@ -7,5 +7,17 @@
 		insert into tbl_reply (rno, bno, reply, replyer)
 		values (seq_reply.nextval, #{bno}, #{reply}, #{replyer})
 	</insert>
+	
+	<select id="read" resultType="org.zerock.domain.ReplyVO">
+		select * from tbl_reply where rno = #{rno}
+	</select>
+	
+	<delete id="delete">
+		delete from tbl_reply where rno = #{rno}
+	</delete>
+	
+	<update id="update">
+		update tbl_reply set reply = #{reply}, updatedate = sysdate where rno = #{rno}
+	</update>
 
 </mapper>
