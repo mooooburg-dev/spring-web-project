@@ -17,7 +17,7 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 public class ReplyServiceImpl implements ReplyService{
 
-//	@Setter(onMethod_ = @Autowired)
+	@Setter(onMethod_ = @Autowired)
 	private ReplyMapper mapper;
 	
 	@Override
