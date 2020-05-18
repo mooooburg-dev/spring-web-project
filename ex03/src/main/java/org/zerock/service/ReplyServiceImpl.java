@@ -17,7 +17,6 @@ import lombok.extern.log4j.Log4j;
 @AllArgsConstructor
 public class ReplyServiceImpl implements ReplyService{
 
-	@Setter(onMethod_ = @Autowired)
 	private ReplyMapper mapper;
 	
 	@Override
@@ -53,7 +52,7 @@ public class ReplyServiceImpl implements ReplyService{
 	}
 
 	@Override
-	public List<ReplyVO> getList(Criteria cri, Long bno) {
+	public List <ReplyVO> getList(Criteria cri, Long bno) {
 		
 		log.info("get Reply List of a Board " + bno);
 		
