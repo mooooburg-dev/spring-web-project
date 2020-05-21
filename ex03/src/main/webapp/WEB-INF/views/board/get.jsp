@@ -6,8 +6,12 @@
 
 <%@ include file="../includes/header.jsp" %>
 
+<script type="text/javascript" src="/resources/js/reply.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
+	console.log(replyService);
+	
 	let operForm = $("#operForm");
 
 	$("button[data-oper='modify']").on("click", function(e){
@@ -20,6 +24,21 @@ $(document).ready(function(){
 		operForm.submit();
 	})	
 });
+</script>
+
+<script>
+console.log('==========================');
+console.log('JS Test');
+
+var bnoValue = '<c:out value="${board.bno}"/>';
+
+replyService.add(
+	{reply:"JS Test", replyer:"tester", bno:bnoValue},
+	function(result){
+		alert("RESULT: "+result);
+	}
+);
+
 </script>
 
 <div class="row">
