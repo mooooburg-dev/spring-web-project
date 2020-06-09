@@ -1,0 +1,25 @@
+INDEX VERSION 1.131
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1777235819.index
+/ex03/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3333088556.index
+/ex02/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2485023825.index
+/ex00/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/40982695.index
+/ex03/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2189512632.index
+/ex02/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1630507530.index
+/jex00/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2268482850.index
+/ex03/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2095072168.index
+/jex02/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1875409627.index
+/jex01/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2600049792.index
+/ex01/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2436582989.index
+/ex01/src/main/java
+/Users/drawyourmind/Documents/Learn/spring-web-project/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2312218099.index
+/ex02/src/main/java

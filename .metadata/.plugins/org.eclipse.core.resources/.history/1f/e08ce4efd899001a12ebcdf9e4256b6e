@@ -1,0 +1,4 @@
+//org.springframework.ide.eclipse.xml.namespaces.default.version.http\://www.springframework.org/schema/jee=
+//org.springframework.ide.eclipse.xml.namespaces.default.version.http\://www.springframework.org/schema/mvc=
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.xml.namespaces.enable.project.preferences=false

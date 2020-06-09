@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;WebConfig.java&apos; to &apos;jex02/src/main/java/org.zerock.config&apos;&#x0A;- Original project: &apos;jex01&apos;&#x0A;- Destination element: &apos;jex02/src/main/java/org.zerock.config&apos;&#x0A;- Original element: &apos;org.zerock.config.WebConfig.java&apos;" description="Copy compilation unit" destination="=jex02/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.config" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.zerock.config{WebConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1584861198828" units="1" version="1.0"/>
+</session>
