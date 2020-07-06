@@ -1,0 +1,24 @@
+server:
+  port: 9060
+
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:log4jdbc:oracle:thin:@172.20.1.215:1521/xe
+      driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+      pool-name: hikari-cp
+      maximum-pool-size: 30
+      minimum-idle: 2
+      password: ENC(oMjsdN81YJGUGN7bazKVUA==)
+      username: ENC(5YINfXHCAXAkcKiLDd/kQA==)
+      
+mpp:
+  upload:
+    root-dir: '/uploadfiles/'
+    server-name: 'http://dev-partner-api.medit.com'
+
+  smtp:
+    server: email-smtp.us-east-1.amazonaws.com
+    port: 587
+    userid: AKIA4RO2KL7BX7ELV6VQ
+    password: BOewLCYJezRuDg8YO2ipgh87AMkeBh1Vw7cwpsxIl1h0

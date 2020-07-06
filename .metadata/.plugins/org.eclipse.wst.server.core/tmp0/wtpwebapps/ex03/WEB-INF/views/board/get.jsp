@@ -10,9 +10,32 @@
 
 <script type="text/javascript">
 $(document).ready(function(){
-	console.log(replyService);
+	var bnoValue = '<c:out value="${board.bno}"/>';
+	var replyUL = $(".chat");
+
+	showList(1);
 	
-	let operForm = $("#operForm");
+	function showList(page){
+
+		replyService.getList({bno:bnoValue, page: page || 1}, function(list){
+			var str = "";
+			if( list == null || list.length == 0){
+				replyUL.html("");
+				return;
+			}
+
+			for (var i = 0, len = list.length || 0; i < len; i++){
+				str += "<li class='list clearfix' data-rno='" + list[i].rno + "'>";
+				str += "<div><div class='header'><strong class='primary-font'>" + list[i].replyer + "</strong>";
+				str += "<small class='pull-right text-muted'>" + list[i].replyDate + "</small></div>";
+				str += "<p>" + list[i].reply + "</p></div></li>";
+			}
+
+			replyUL.html(str);
+		})
+	}
+	
+	var operForm = $("#operForm");
 
 	$("button[data-oper='modify']").on("click", function(e){
 		operForm.attr("action", "/board/modify").submit();
@@ -24,52 +47,6 @@ $(document).ready(function(){
 		operForm.submit();
 	})	
 });
-</script>
-
-<script>
-console.log('==========================');
-console.log('JS Test');
-
-var bnoValue = '<c:out value="${board.bno}"/>';
-
-
-//for replyService add test
-replyService.add(
-	{reply:"JS Test", replyer:"tester", bno:bnoValue},
-	
-	function(result){
-		// alert("RESULT: "+result);
-	}
-);
-
-// reply List test
-replyService.getList({bno: bnoValue, page: 1}, function(list){
-	for( var i=0, len = list.length||0; i<len ; i++ ){
-		/* console.log(list[i]); */
-	}
-})
-
-// 62번 댓글 삭제 테스트
-/* replyService.remove(62, function(count){
-	console.log(count);
-
-	if(count === "success"){
-		alert("REMOVED");
-	}
-}, function(error){
-	alert('ERROR.........');
-}) */
-
-// 2번 댓글 수정
-replyService.update({
-	rno: 101,
-	bno: bnoValue,
-	reply: "Modified Reply........",
-	replyer: "PJPJ",
-}, function(result){
-	alert("수정 완료!!!!!!!!!");
-})
-
 </script>
 
 <div class="row">
@@ -111,6 +88,30 @@ replyService.update({
 					<input type='hidden' name='type' value='<c:out value="${cri.type}"/>'>
 				</form>
 				
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<i class="fa fa-comments fa-fw"></i> Reply
+			</div>
+			
+			<div class="panel-body">
+				<ul class="chat">
+				
+					<li class="left clearfix" data-rno="12">
+						<div>
+							<div class="header">
+								<strong class="primary-font">user00</strong>
+								<small class="pull-right text-muted">2018-01-01 13:13</small>
+							</div>
+							<p>Good job!</p>
+						</div>
+					</li>
+				</ul>				
 			</div>
 			
 		</div>
