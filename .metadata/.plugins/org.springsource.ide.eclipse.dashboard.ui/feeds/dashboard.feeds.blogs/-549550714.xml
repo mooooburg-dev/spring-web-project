@@ -5,7 +5,84 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-07-03T01:48:58Z</updated>
+  <updated>2020-07-07T00:02:52Z</updated>
+  <entry>
+    <title>This Week in Spring - July 7th, 2020</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/07/this-week-in-spring-july-7th-2020" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-07-06:4124</id>
+    <updated>2020-07-07T00:02:52Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! What a crazy week it&amp;rsquo;s been! How are you? I hope you&amp;rsquo;re safe, healthy, happy. &lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll be speaking later today (Tuesday) at the &lt;a href="https://2020.accento.dev/"&gt;Accento Digital conference&lt;/a&gt; and at the &lt;a href="https://pages.jetbrains.com/technology-day-java-2020/tw-speakers"&gt;Jetbrains Java Day online&lt;/a&gt; event on the 10th (Friday). Both of these should be accessible from EMEA and APJ timezones. I look forward to seeing you there!&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ve got a &lt;em&gt;ton&lt;/em&gt; of good stuff to get to this week so let&amp;rsquo;s get to it! &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/03/a-bootiful-podcast-an-exciting-week-of-releases-and-dr-yordan-karadzhov"&gt;A Bootiful Podcast: An Exciting Week of Releases and Dr. Yordan Karadzhov&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=BKepFaIwCvo&amp;feature=youtu.be"&gt;A great screencast from Matt Raible: Angular Docker with a Big Hug from Spring Boot - YouTube&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/07/02/zgc-softmaxheapsize/"&gt;A nice post on ZGC and using &lt;code&gt;-XX:SoftMaxHeapSize&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/java/status/1275481212941856768"&gt;A nice talk about Java in containers by David Delabassee&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/saratorrey/status/1279076569428963329?s=12"&gt;An Axon podcast with Allard Buijze&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/06/24/erasure/"&gt;Background: how we got the generics we have&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.cloudfoundry.org/bi-weekly-round-up-technical-ecosystem-updates-from-cloud-foundry-6-30-20/"&gt;Bi-weekly Round-Up: Technical Ecosystem Updates from Cloud Foundry | 6.30.20&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/06/25/compact-forwarding/"&gt;Compact Forwarding Information&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/presentations/spring-initializr/?itm_campaign=rightbar_v2&amp;itm_source=infoq&amp;itm_medium=presentations_link&amp;itm_content=link_text"&gt;Creating &amp;ldquo;The Second Best Place on the Internet&amp;rdquo; with Spring Initializr&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://mdeinum.github.io/2020-06-30-Wait-for-database-startup/"&gt;Delay startup of your Spring Boot application until your DB is up.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://devjourney.info/Guests/107-JoshLong.html"&gt;DevJourney Podcast | What if you could sit around a campfire &#x1f525; and listen to the world’s best software developers tell you the tales of their life journeys? Welcome to Software Developer’s Journey, the podcast shining a light &#x1f4a1; on developer’s&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://solocoding.dev/blog/eng_docker_buildpacks"&gt;Docker, SpringBoot &amp;amp; Buildpacks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/25/first-spring-framework-5-3-milestone-released"&gt;First Spring Framework 5.3 milestone released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/25/first-milestone-of-spring-data-2020-0-available"&gt;First milestone of Spring Data 2020.0 available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://benwilcock.wordpress.com/2020/06/25/getting-started-with-rsocket-on-spring-boot/amp/?__twitter_impression=true"&gt;Getting Started with RSocket on Spring Boot – Ben Wilcock&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/cloudfoundry/status/1278431619158867969"&gt;Great talk: Why Empathy Matters in Infrastructure Delivery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMwareTanzu/status/1278369696379781121"&gt;Have you checked out Tanzu Mission Control’s new data protection feature?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/07/01/hot-and-cold-objects/"&gt;How do &amp;lsquo;hot and cold&amp;rsquo; objects behave?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tech.cocone.io/2020/06/30/springboot-autowired%E5%88%A9%E7%94%A8%E6%99%82%E3%81%AE%E8%AD%A6%E5%91%8A%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"&gt;I like this Japanese-language post on Spring’s &lt;code&gt;@Autowired&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.youtube.com/watch?v=xCu73WVg8Ps"&gt;I loved this talk &lt;em&gt;Avoiding Reactor Meltdowns&lt;/em&gt; about how to use project Reactor and understand what’s happening&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/codecentric/status/1278015854987354115?s=12"&gt;It was a lot of fun doing a meetup this morning (PST) for folks who received pizza for dinner in their timezone (CEST)!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/06/29/adopt-cpp-14/"&gt;JEP 347: Adopt C 14 Language Features in the JDK&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/jakub_pomykala/status/1278607341408194560?s=12"&gt;Jakub Pomykala has an open source project to package up reusable patterns for Spring Boot-based applications.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/juliendubois/status/1275415716049674241?s=12"&gt;Julien Dubois on an Azure Native Function with Spring Cloud Function&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tanzu.vmware.com/content/webinars/jun-24-tanzu-observability-tips-for-understanding-your-spring-boot-applications"&gt;Jun 24 - Tanzu Observability Tips for Understanding Your Spring Boot Applications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.jetbrains.com/lp/devecosystem-2020/kotlin/"&gt;Kotlin Programming - The State of Developer Ecosystem in 2020 Infographic | JetBrains: Developer Tools for Professionals and Teams&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/kotlin/status/1276083456854941697"&gt;Kotlin on Twitter: &amp;quot;Avoid using destructuring declarations together with non-trivial custom data classes: it will be too easy to break your code if you add new properties to such classes later.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/kotlin/status/1278712617792679936"&gt;Kotlin on Twitter: &amp;quot;Comparing two strings irrespective of their capitalization? Don’t create new strings with toLower() to compare them. Instead, use equals(), which has an option to ignore case when comparing two strings. This way you won’t have to a&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/kotlin/status/1277897234043097090"&gt;Kotlin on Twitter: &amp;quot;If you are using the isBlank() or isEmpty() methods to assign default strings, consider using their ifBlank and ifEmpty counterparts instead. They are designed to make exactly this use-case more concise and to avoid repetition. htt&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/kotlin/status/1273202508224217088"&gt;Kotlin on Twitter: &amp;quot;When working with multiple lists, evaluate whether set operations like union, intersect, or subtract can help solve your task quickly, rather than relying on filters. They are available as extension and infix functions on Sets, Lists, &lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.marcobehler.com/interviews/spring-interview-simon-martinelli"&gt;Marco Behler has another nice interview with a Spring community legend, Simon Martinelli&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://inside.java/2020/06/29/new-loom-ea-build/"&gt;New Project Loom Early-Access Builds&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/news/2020/06/harbor-graduation-michael/"&gt;Open Source Registry Harbor&amp;rsquo;s Graduation: Q&amp;amp;A with VMware&amp;rsquo;s Michael Michael&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.rabbitmq.com/blog/2020/06/30/this-month-in-rabbitmq-may-2020-recap/"&gt;RabbitMQ » Blog Archive » This Month in RabbitMQ, May 2020 Recap - Messaging that just works&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://dev.to/probablyrealrob/reactive-programming-with-java-spring-r2dbc-and-mariadb-3327"&gt;Reactive Programming with Java Spring, R2DBC and MariaDB - DEV&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/articles/axon-server-cqrs-event-sourcing-java/?itm_campaign=rightbar_v2&amp;itm_source=infoq&amp;itm_medium=articles_link&amp;itm_content=link_text"&gt;Running Axon Server - CQRS and Event Sourcing in Java&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/SaraTorrey/status/1279076569428963329"&gt;Sara&#x1f399; on Twitter: &amp;quot;&#x1f4e3;I (virtually) sat down with @allardbz to talk about the beginnings of Axon framework and the start of AxonIQ. Enjoy!&#x1f399; #Podcast &#x1f3a7; #DDD #EventSourcing #Java☕️ #Developer #SoftwareArchitecture #SoftwareEngineering #AxonFra&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.marcobehler.com/interviews/spring-interview-siva-prasad"&gt;Siva Prasad, a wonderful member of the community, did one of Marco Behler&amp;rsquo;s &lt;em&gt;The Spring Interviews&lt;/em&gt;. I thought it was a fun read, and you might too.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://morioh.com/p/1551fd9853b8"&gt;Social Network for Programmers and Developers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/26/spring-batch-4-3-0-m1-is-released-now"&gt;Spring Batch 4.3.0-M1 is released now!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.infoq.com/news/2020/06/spring-boot-230-cloud/"&gt;Spring Boot 2.3.0 Focuses on the Cloud&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/29/spring-boot-2-4-0-m1-is-now-available"&gt;Spring Boot 2.4.0-M1 is now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/29/spring-integration-5-4-m1-available"&gt;Spring Integration 5.4 M1 is now available! The Spring Integration 5.4 generation is based on the recently released Spring Framework 5.3 M1, which includes updated dependencies. The new release also includes the long-requested addition of the Spring Integration Kafka extension module. The new &lt;code&gt;spring-integration-r2dbc&lt;/code&gt; module supports &lt;code&gt;INSERT&lt;/code&gt;, &lt;code&gt;UPDATE&lt;/code&gt;, &lt;code&gt;DELETE&lt;/code&gt; operations from integration flows in reactive manner. Redis Streams support has been introduced with the &lt;code&gt;ReactiveRedisStreamMessageHandler&lt;/code&gt;.And, the project is now compatible with Java 14. We’re looking what can be done for Java 17 compatibility.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/07/02/spring-security-5-4-0-m2-released"&gt;Spring Security 5.4.0-M2 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/06/23/tern-soaring-through-container-images/"&gt;Tern: Soaring Through Container Images&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/mimacom/status/1275681324477669379?s=12"&gt;Thanks Mimacom for having me! This was a blast.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://cloud.spring.io/spring-cloud-static/spring-cloud-function/3.0.7.RELEASE/reference/html/gcp.html"&gt;The Google Cloud team worked with the Spring Cloud team to support Google Cloud Functions (Alpha) with Spring Cloud Function. Try it out!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/VMwareTanzu/status/1279210016608788480"&gt;The New Stack has a nice post on Tanzu, the VMware Kubernetes distribution for developers .&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://blogs.vmware.com/opensource/2020/06/25/the-past-present-and-future-of-cloud-foundry-part-1/"&gt;The Past, Present and Future of Cloud Foundry – Part 1&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/javacodedaily/status/1279088121515294720?s=12"&gt;The actuator can show information from the Spring Boot app&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/1280178852355084290"&gt;There&amp;rsquo;s an open issue on Spring Cloud Zookeeper on which we&amp;rsquo;d love your help!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/sendilkumarn/status/1279857748147126273?s=12"&gt;There’s a new release of JHipster&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://medium.com/javarevisited/building-scalable-facebook-like-notification-using-server-sent-event-and-redis-9d0944dee618"&gt;This is a nice post on how to build scalable Facebook-like notifications using Server-Sent Events and Redis (and Spring Boot).&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://github.com/wimdeblauwe/error-handling-spring-boot-starter"&gt;This is another interesting open-source project by the community; it’s a Spring Boot starter for configurable REST API error handling. Looks interesting&amp;hellip;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://todd.ginsberg.com/post/springboot-reactive-kotlin-coroutines/"&gt;Todd Ginsberg looks at reactive Spring Boot with Kotlin Coroutines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://spring.io/blog/2020/06/30/url-matching-with-pathpattern-in-spring-mvc"&gt;URL Matching with PathPattern in Spring MVC&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/cloudfoundry/status/1276164206270824448"&gt;Want to get involved in the &lt;code&gt;cf-for-k8s&lt;/code&gt; project or start kicking the tires? Check out these resources!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://tompriordev.com/2020/06/14/whats-pcf-all-about/"&gt;What’s PCF All About? – Tom Prior&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://mdeinum.github.io/2020-07-03-Autowired-Field-Null/"&gt;Why are my &lt;code&gt;@Autowired&lt;/code&gt; fields &lt;code&gt;null&lt;/code&gt;?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/springcloud/status/1280205085180596233"&gt;Yet another great issue that&amp;rsquo;s ideal for contribution in Spring Cloud.&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/Hellnotreal/status/1278686967111262209"&gt;@olajide on Twitter: &amp;ldquo;I love springboot &lt;a href="https://t.co/VOY9b5Uycx"&gt;https://t.co/VOY9b5Uycx&lt;/a&gt;&amp;rdquo; / Twitter&lt;/a&gt;. Permit me to be so bold as to speak on behalf of the entire Spring team to say that we love you, the community, too!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>A Bootiful Podcast: An Exciting Week of Releases and Dr. Yordan Karadzhov</title>
     <link rel="alternate" href="https://spring.io/blog/2020/07/03/a-bootiful-podcast-an-exciting-week-of-releases-and-dr-yordan-karadzhov" />
@@ -1215,20 +1292,6 @@ class Customer {&#xD;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Upcoming Webinar: Bootiful Observability with Tanzu Wavefront by Josh Long and Sushant Dewan</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/12/upcoming-webinar-bootiful-observability-with-tanzu-wavefront-by-josh-long-and-sushant-dewan" />
-    <category term="news" label="News and Events" />
-    <author>
-      <name>Josh Long</name>
-    </author>
-    <id>tag:spring.io,2020-06-12:4104</id>
-    <updated>2020-06-12T12:25:55Z</updated>
-    <content type="html">&lt;p&gt;Need better insight into your Spring Boot Applications? Join Spring Developer Advocate &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long&lt;/a&gt; and Sushant Dewan in a live webinar conversation on June 24th at 10:00 AM PST.&lt;/p&gt;
-&lt;p&gt;Get Tanzu Observability tips on how to understand the impact of your code on your application with application maps, metrics, distributed traces, histograms, and span logs analytics!&lt;/p&gt;
-&lt;p&gt;Register now &lt;a href="https://tanzu.vmware.com/content/webinars/jun-24-tanzu-observability-tips-for-understanding-your-spring-boot-applications"&gt;for this free, virtual event&lt;/a&gt; you won&amp;rsquo;t want to miss. &lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
