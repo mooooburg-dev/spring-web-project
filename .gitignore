@@ -10,7 +10,7 @@
 hs_err_pid*
 
 # Eclipse
-.metaData/
+.metadata/
 .classpath
 .project
 .settings/
