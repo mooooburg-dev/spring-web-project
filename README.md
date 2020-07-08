@@ -1,7 +1,5 @@
 ## 코드로 배우는 스프링 웹프로젝트(개정판) -구멍가게 코딩단- 
 
-![image](https://user-images.githubusercontent.com/18201794/86884850-2f55d780-c12f-11ea-8d0a-5f79906f3874.png)
-
 ### 서적 링크 : [교보문고](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791189184018&orderClick=LEA&Kc=)
 #### 네이버 카페 : 구멍가게 코딩단 (https://cafe.naver.com/gugucoding)
 ##### 예제 실습 프로젝트(2020.03 ~ )
