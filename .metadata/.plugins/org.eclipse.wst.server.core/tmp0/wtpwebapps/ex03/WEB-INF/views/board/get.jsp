@@ -7,6 +7,37 @@
 <%@ include file="../includes/header.jsp" %>
 
 <!-- Modal 추가할 차례 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">REPLY MODAL</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-grouop">
+					<label>Reply</label>
+					<input class="form-control" name="reply" value="New Reply!!">
+				</div>
+				<div class="form-group">
+					<label>Replyer</label>
+					<input class="form-control" name="replyer" value="replyer">
+				</div>
+				<div class="form-group">
+					<label>Reply Date</label>
+					<input class="form-control" name="replyDate" value="">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button id="modalModBtn" type="button" class="btn btn-warning">Modify</button>
+				<button id="modalRemoveBtn" type="button" class="btn btn-danger">Remove</button>
+				<button id="modalRegisterBtn" type="button" class="btn btn-primary">Register</button>
+				<button id="modalCloseBtn" type="button" class="btn btn-default">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
 
 
 <script type="text/javascript" src="/resources/js/reply.js"></script>
@@ -38,6 +69,32 @@ $(document).ready(function(){
 			replyUL.html(str);
 		})
 	}
+
+	var modal = $('.modal');
+	var modalInputReply = modal.find("input[name='reply']");
+	var modalInputReplyer = modal.find("input[name='replyer']");
+	var modalInputReplyDate = modal.find("input[name='replyDate']");
+
+	var modalModBtn = $('#modalModBtn');
+	var modalRemoveBtn = $('#modalRemoveBtn');
+	var modalRegisterBtn = $('#modalRegisterBtn');
+
+	$("#addReplyBtn").on('click', function(e){
+		console.log('addReplyBtn');
+		modal.find("input").val("");
+		modalInputReplyDate.closest('div').hide();
+		modal.find("button[id != 'modalCloseBtn']").hide();
+
+		modalRegisterBtn.show();
+
+		$(".modal").modal("show");
+	})
+	
+	
+	///
+	modelRegisterBtn.on("click", function(e){
+		// p423 시작할 차
+	})
 	
 	var operForm = $("#operForm");
 

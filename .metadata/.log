@@ -10115,3 +10115,573 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:15:53.830
 !MESSAGE executing callback sts4.classpath.xCKQpZwN SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-08 01:21:29.138
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-08 01:21:29.143
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.148
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.149
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.153
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.155
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.155
+!MESSAGE Preparing classpath changed notification ex01
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.156
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.162
+!MESSAGE classpath=59 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.164
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex01 false 58
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.165
+!MESSAGE Preparing classpath changed notification ex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.165
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.168
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.169
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.170
+!MESSAGE Preparing classpath changed notification ex03
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.171
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.174
+!MESSAGE classpath=55 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.176
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex03 false 54
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.176
+!MESSAGE Preparing classpath changed notification jex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.177
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.179
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.180
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.181
+!MESSAGE Preparing classpath changed notification jex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.182
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.185
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.186
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.187
+!MESSAGE executing callback sts4.classpath.xCKQpZwN 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:29.223
+!MESSAGE executing callback sts4.classpath.xCKQpZwN SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-08 01:21:54.473
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-08 01:21:54.477
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.485
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.486
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.490
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.492
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.492
+!MESSAGE Preparing classpath changed notification ex01
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.493
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.497
+!MESSAGE classpath=59 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.498
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex01 false 58
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.498
+!MESSAGE Preparing classpath changed notification ex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.499
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.501
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.503
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.503
+!MESSAGE Preparing classpath changed notification ex03
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.504
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.510
+!MESSAGE classpath=55 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.512
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex03 false 54
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.512
+!MESSAGE Preparing classpath changed notification jex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.513
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.519
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.520
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.521
+!MESSAGE Preparing classpath changed notification jex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.521
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.525
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.526
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.527
+!MESSAGE executing callback sts4.classpath.xCKQpZwN 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:21:54.739
+!MESSAGE executing callback sts4.classpath.xCKQpZwN SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-08 01:22:33.779
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-08 01:22:33.798
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.810
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.810
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.814
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.816
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.816
+!MESSAGE Preparing classpath changed notification ex01
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.817
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.823
+!MESSAGE classpath=59 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.824
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex01 false 58
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.825
+!MESSAGE Preparing classpath changed notification ex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.825
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.827
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.829
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.829
+!MESSAGE Preparing classpath changed notification ex03
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.829
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.832
+!MESSAGE classpath=55 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.848
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex03 false 54
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.848
+!MESSAGE Preparing classpath changed notification jex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.849
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.852
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.853
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.855
+!MESSAGE Preparing classpath changed notification jex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.855
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.857
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.858
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.859
+!MESSAGE executing callback sts4.classpath.xCKQpZwN 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:22:33.987
+!MESSAGE executing callback sts4.classpath.xCKQpZwN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:21.998
+!MESSAGE Preparing classpath changed notification ex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.000
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.007
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.008
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.009
+!MESSAGE Preparing classpath changed notification ex01
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.010
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.019
+!MESSAGE classpath=59 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.020
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex01 false 58
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.021
+!MESSAGE Preparing classpath changed notification ex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.022
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.035
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.038
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.039
+!MESSAGE Preparing classpath changed notification ex03
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.040
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.043
+!MESSAGE classpath=55 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.044
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN ex03 false 54
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.045
+!MESSAGE Preparing classpath changed notification jex00
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.045
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.052
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.054
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex00 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.054
+!MESSAGE Preparing classpath changed notification jex02
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.055
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.061
+!MESSAGE classpath=54 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.063
+!MESSAGE buffering callback sts4.classpath.xCKQpZwN jex02 false 53
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.064
+!MESSAGE executing callback sts4.classpath.xCKQpZwN 6 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.110
+!MESSAGE executing callback sts4.classpath.xCKQpZwN SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.622
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xCKQpZwN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.622
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.xCKQpZwN
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.623
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-07-08 01:25:22.624
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.xCKQpZwN => OK
+!SESSION 2020-07-13 00:58:00.282 -----------------------------------------------
+eclipse.buildId=4.5.1.202001211336-RELEASE
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/drawyourmind/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/drawyourmind/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-07-13 00:58:12.094
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16|local|*.local|169.254/16|*.169.254/16|local|*.local|169.254/16|*.169.254/16|local|*.local|169.254/16|*.169.254/16|127.0.0.1:16105|*.127.0.0.1:16105|lx.astxsvc.com|*.lx.astxsvc.com|localhost|*.localhost by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2020-07-13 00:58:13.848
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-07-13 00:58:13.848
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40fd1a78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@53b7f08,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.mylyn.tasks.core 4 0 2020-07-13 00:58:15.584
+!MESSAGE Unexpected error while loading repository template extensions
+!SUBENTRY 1 org.eclipse.mylyn.tasks.core 4 0 2020-07-13 00:58:15.584
+!MESSAGE Could not load repository template extension contributed by 'org.eclipse.mylyn.bugzilla.ide' with connectorKind 'bugzilla'
+
+!ENTRY com.wakatime.eclipse.plugin 1 0 2020-07-13 00:58:44.316
+!MESSAGE wakatime-cli is up to date.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:46.421
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:46.651
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:49.111
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:49.142
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:49.673
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:49.681
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:50.210
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:50.230
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:50.643
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:50.656
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:52.988
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:52.993
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:54.730
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 00:58:54.755
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:01:13.664
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:01:13.676
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:02:59.313
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:02:59.317
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:06:18.043
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:06:18.047
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:06:49.497
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:06:49.505
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:07:22.676
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:07:22.679
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:08:23.292
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:08:23.295
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:10:12.019
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:10:12.025
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:10:23.315
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:10:23.319
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:11:23.311
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:11:23.330
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2020-07-13 01:11:29.116
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/wakatime/eclipse-wakatime/master/update-site/content.jar
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:11:49.275
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:11:49.278
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:11:59.289
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:11:59.292
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:11.881
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:11.904
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:28.440
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:28.443
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:36.553
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:36.557
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:37.583
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:37.586
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:52.128
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:12:52.130
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:14:21.053
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:14:21.058
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:15:49.003
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:15:49.007
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:16:04.676
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:16:04.679
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:17:45.010
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:17:45.013
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:18:45.665
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:18:45.676
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:19:50.379
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:19:50.382
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:20:48.847
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:20:48.851
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:20:51.170
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-13 01:20:51.173
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

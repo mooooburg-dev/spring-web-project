@@ -5,7 +5,86 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2020-07-07T00:02:52Z</updated>
+  <updated>2020-07-10T14:00:41Z</updated>
+  <entry>
+    <title>First milestone of Reactor 2020.0 (Codename Europium)</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/10/first-milestone-of-reactor-2020-0-codename-europium" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Simon Baslé</name>
+    </author>
+    <id>tag:spring.io,2020-07-07:4125</id>
+    <updated>2020-07-10T14:00:41Z</updated>
+    <content type="html">&lt;p&gt;Earlier this month, we released a first milestone of Reactor 2020.0.&lt;br/&gt;This cycle, codename &lt;code&gt;Europium&lt;/code&gt;, follows the Dysprosium one (which included reactor-core 3.3.x and reactor-netty 0.9.x).&lt;/p&gt;
+&lt;p&gt;It includes reactor-core &lt;code&gt;3.4.0&lt;/code&gt; and reactor-netty &lt;code&gt;1.0.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In this blog post, we&amp;rsquo;ll cover a few highlights of the reactor-core milestone, and briefly mention what&amp;rsquo;s in store for M2.&lt;/p&gt;
+&lt;p&gt;For reactor-netty, we&amp;rsquo;ll link to a separate blog post here as soon as it is out.&lt;/p&gt;
+&lt;p&gt;Note also that there is a new versioning scheme in place, which has been adopted accross the Spring portfolio: see the &lt;a href="https://projectreactor.io/docs/core/snapshot/reference/#getting-started-understanding-bom"&gt;reference guide&lt;/a&gt; and &lt;a href="https://spring.io/blog/2020/04/30/updates-to-spring-versions"&gt;this blog post&lt;/a&gt;.&lt;/p&gt;&lt;h1&gt;&lt;a href="#changes-around-code-processor-code" class="anchor" name="changes-around-code-processor-code"&gt;&lt;/a&gt;Changes around &lt;code&gt;Processor&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;The main change in core is a long overdue effort around &lt;code&gt;Processor&lt;/code&gt; implementations in Reactor and how they are exposed.&lt;/p&gt;
+&lt;p&gt;This is the main focus of &lt;code&gt;reactor-core 3.4.0-M1&lt;/code&gt;, and the goal is to phase out usage of the concrete flavor of &lt;code&gt;FluxProcessor&lt;/code&gt; (and to some extent &lt;code&gt;MonoProcessor&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Processor&lt;/code&gt; is an interface from Reactive Streams, originally intended as a way to represent a &amp;ldquo;step&amp;rdquo; in a reactive pipeline that could be shared between libraries.But these days, operators are largely directly implemented as &lt;code&gt;Publisher/Subscriber&lt;/code&gt; pairs, so in Reactor processors end up covering different use cases (most often, multicasting from one &lt;code&gt;Publisher&lt;/code&gt; to multiple &lt;code&gt;Subscriber&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;So most often, users are looking at processors as a way to &amp;ldquo;manually create a &lt;code&gt;Flux&lt;/code&gt;&amp;rdquo;: rather than connecting a &lt;code&gt;Processor&lt;/code&gt; to a parent publisher (aka using it as a &lt;code&gt;Subscriber&lt;/code&gt;), they directly call its &lt;code&gt;onNext&lt;/code&gt;/&lt;code&gt;onComplete&lt;/code&gt;/&lt;code&gt;onError&lt;/code&gt; methods. This is unfortunately a problematic approach, because such calls MUST be made in a way that conforms to the Reactive Streams specification, meaning that they need to be externally synchronized.&lt;/p&gt;
+&lt;p&gt;Historically, this has been alleviated by the introduction of the &lt;code&gt;sink()&lt;/code&gt; method on &lt;code&gt;FluxProcessor&lt;/code&gt;. The idea was that if you want to use the &lt;code&gt;FluxProcessor&lt;/code&gt; in a manual way like this, you would need to instantiate the processor flavor you want, then call its &lt;code&gt;sink()&lt;/code&gt; method ONCE and use the resulting &lt;code&gt;FluxSink&lt;/code&gt; from there on to trigger signals to subscribers. Downstream, the &lt;code&gt;FluxProcessor&lt;/code&gt; itself is exposed (as a &lt;code&gt;Flux&lt;/code&gt; on which operators can be composed).&lt;/p&gt;
+&lt;p&gt;This is still problematic from a discoverability standpoint, because the &amp;ldquo;right way&amp;rdquo; of cattering to the most common use case is the hardest to come up with.&lt;/p&gt;
+&lt;p&gt;With 3.4.0, we intend to turn that around and put the &lt;code&gt;Sink&lt;/code&gt; usage pattern in the spotlight as the first class citizen, and make the &lt;code&gt;Processor&lt;/code&gt; usage pattern harder to accidentally discover or misuse.&lt;/p&gt;
+&lt;p&gt;This first milestone makes a first step towards that by:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;deprecating all concrete implementations of &lt;code&gt;FluxProcessor&lt;/code&gt;, which are now slated for removal in &lt;code&gt;3.5.0&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;exposing a &lt;code&gt;Sinks&lt;/code&gt; utility class that bears factory methods for sinks aimed to be manually triggered&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In M1 the flavors of processors are still there but the factory methods have been copied over the &lt;code&gt;Processors&lt;/code&gt; class, &lt;em&gt;but that is already being reworked in M2&lt;/em&gt;.&lt;br/&gt;We intend to move the choice of flavors on &lt;code&gt;Sinks&lt;/code&gt; instead in M2. There would then be a way to turn a &lt;code&gt;Sink&lt;/code&gt; into a &lt;code&gt;FluxProcessor&lt;/code&gt; from there on, removing the need for &lt;code&gt;Processors&lt;/code&gt; in M2.&lt;/p&gt;&lt;h1&gt;&lt;a href="#migrating-away-from-concrete-processors-in-m1" class="anchor" name="migrating-away-from-concrete-processors-in-m1"&gt;&lt;/a&gt;Migrating away from concrete processors in M1&lt;/h1&gt;
+&lt;p&gt;In &lt;code&gt;M1&lt;/code&gt;, all factory methods on concrete &lt;code&gt;xxxProcessor&lt;/code&gt; (eg. &lt;code&gt;UnicastProcessor.create()&lt;/code&gt;) have been moved to either &lt;code&gt;Processors&lt;/code&gt; for the base case or &lt;code&gt;Processors.more()&lt;/code&gt; for the overloads that allow finer tuning. The methods distinguish flavors by prefixes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;UnicastProcessor&lt;/code&gt; -&amp;gt; &lt;code&gt;Processors.unicast()&lt;/code&gt; and &lt;code&gt;Processors.more().unicast(...)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;EmitterProcessor&lt;/code&gt; -&amp;gt; &lt;code&gt;Processors.multicast()&lt;/code&gt; and &lt;code&gt;Processors.more().multicast(...)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;DirectProcessor&lt;/code&gt; -&amp;gt; &lt;code&gt;Processors.more().multicastNoBackpressure()&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;ReplayProcessor&lt;/code&gt; -&amp;gt; &lt;code&gt;Processors.replayAll()&lt;/code&gt;/&lt;code&gt;replay(int)&lt;/code&gt;/&lt;code&gt;replayTimeout(Duration)&lt;/code&gt;/&lt;code&gt;replaySizeAndTimeout(int, Duration)&lt;/code&gt; and similar methods on &lt;code&gt;Processors.more()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All these processors conceptually have the same input and output type &lt;code&gt;&amp;lt;T&amp;gt;&lt;/code&gt;, so they are &lt;code&gt;FluxProcessor&amp;lt;T,T&amp;gt;&lt;/code&gt;. A convenience interface &lt;code&gt;FluxIdentityProcessor&amp;lt;T&amp;gt;&lt;/code&gt; has been introduced in M1 but it doesn&amp;rsquo;t bring much other than reducing the number of generics, so it might be removed in M2.&lt;/p&gt;
+&lt;p&gt;But rather than using a &lt;code&gt;FluxProcessor&lt;/code&gt; from &lt;code&gt;Processors&lt;/code&gt;, we said one should favor using &lt;code&gt;Sinks&lt;/code&gt;. In this scenario, one would get a sink first and turn it into a &lt;code&gt;Flux&lt;/code&gt; or &lt;code&gt;Mono&lt;/code&gt; for the rest of the application to compose upon, like in the below example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="prettyprint"&gt;//you get the sink first and foremost&#xD;
+StandaloneFluxSink&amp;lt;Integer&amp;gt; sink = Sinks.multicast();&#xD;
+&#xD;
+//this is what the rest of the application sees and uses&#xD;
+Flux&amp;lt;Integer&amp;gt; flux = sink.asFlux();&#xD;
+flux.map(i -&amp;gt; i * 10).subscribe();&#xD;
+flux.filter(i -&amp;gt; i % 2 == 0).subscribe();&#xD;
+&#xD;
+//this is how you push data to the subscribers through the sink (thread safe)&#xD;
+sink.next(1);&#xD;
+sink.next(2);&#xD;
+sink.next(3);&#xD;
+sink.next(4);&#xD;
+sink.complete();
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that the class currently offers less variants than &lt;code&gt;Processors&lt;/code&gt;, but this is being reconsidered for M2.&lt;/p&gt;&lt;h1&gt;&lt;a href="#deprecations-and-removals" class="anchor" name="deprecations-and-removals"&gt;&lt;/a&gt;Deprecations and Removals&lt;/h1&gt;
+&lt;p&gt;Several classes that were deprecated back in 3.3.0 have been &lt;strong&gt;removed&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;TopicProcessor&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;WorkQueueProcessor&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;Schedulers.boundedElastic()&lt;/code&gt; has been out since 3.3.0 and we think we can now &lt;strong&gt;deprecate&lt;/strong&gt; its ancestor, &lt;code&gt;elastic()&lt;/code&gt;, rather than just recommend using boundedElastic over elastic.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;boundedElastic&lt;/code&gt; &lt;code&gt;Scheduler&lt;/code&gt; will be removed in 3.5.0.&lt;/p&gt;&lt;h1&gt;&lt;a href="#reactor-netty-is-hitting-1-0" class="anchor" name="reactor-netty-is-hitting-1-0"&gt;&lt;/a&gt;Reactor-Netty is hitting 1.0&lt;/h1&gt;
+&lt;p&gt;There is much much to cover here, which we&amp;rsquo;ll do in a separate blog post.&lt;/p&gt;&lt;h1&gt;&lt;a href="#conclusion" class="anchor" name="conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Please try out the &lt;a href="https://repo.spring.io/milestone/io/projectreactor/reactor-core/3.4.0-M1/"&gt;M1&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re already making further changes to sinks and processors in M2, along with other themes like &lt;code&gt;Context&lt;/code&gt; operators, avoiding thrown exceptions in &lt;code&gt;subscribe&lt;/code&gt; and improving the story around metrics.&lt;/p&gt;
+&lt;p&gt;As always, feedback for both M1 and current M2 snapshots is very welcome.&lt;/p&gt;
+&lt;p&gt;In the meantime, happy reactive coding !&lt;br/&gt;The Reactor Team.&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
+  <entry>
+    <title>A Bootiful Podcast: Spring Data JDBC lead on Spring Data, domain driven design and more</title>
+    <link rel="alternate" href="https://spring.io/blog/2020/07/10/a-bootiful-podcast-spring-data-jdbc-lead-on-spring-data-domain-driven-design-and-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2020-07-10:4126</id>
+    <updated>2020-07-10T00:12:32Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of a Bootiful Podcast! In this installment &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks about the week that was and talks to the amazing Spring Data JDBC cofounder &lt;a href="https://twitter.com/jensschauder"&gt;Jens Schauder (@jensschauder) &lt;/a&gt; about JPA, JDBC, and domain-driven design. &lt;/p&gt;
+&lt;iframe title="Spring Data JDBC co-founder on JDBC, JPA and domain driven design" src="https://www.podbean.com/media/player/3449z-e2b0f1?from=usersite&amp;vjs=1&amp;skin=1&amp;fonts=Helvetica&amp;auto=0&amp;download=1" height="315" width="100%" style="border: none;" scrolling="no" data-name="pb-iframe-player"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - July 7th, 2020</title>
     <link rel="alternate" href="https://spring.io/blog/2020/07/07/this-week-in-spring-july-7th-2020" />
@@ -1180,118 +1259,6 @@ class Customer {&#xD;
   &lt;li&gt;&lt;a href="https://github.com/confluentinc/examples/tree/latest/clients/cloud/java-springboot"&gt;Use Spring Boot to write an Apache Kafka client application to Confluent Cloud&lt;/a&gt;. With the promo code C50INTEG, you can easily get started with an additional $50 of free Confluent Cloud usage.&lt;/li&gt;
   &lt;li&gt;Spring Cloud co-founder &lt;a href="https://www.youtube.com/watch?v=ljfarj4cje4&amp;feature=share"&gt;Spencer Gibb talks RSocketIO&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot for Apache Geode &amp; VMware GemFire 1.1.8.RELEASE and 1.2.8.RELEASE available!</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/16/spring-boot-for-apache-geode-vmware-gemfire-1-1-8-release-and-1-2-8-release-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>John Blum</name>
-    </author>
-    <id>tag:spring.io,2020-06-16:4107</id>
-    <updated>2020-06-16T23:01:56Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the Spring, Apache Geode and VMware GemFire communities, it is my pleasure to announce the release of &lt;em&gt;Spring Boot for  Apache Geode &amp;amp; VMware GemFire&lt;/em&gt; (SBDG) &lt;code&gt;1.1.8.RELEASE&lt;/code&gt; and &lt;code&gt;1.2.8.RELEASE&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;SBDG &lt;code&gt;1.1.8.RELEASE&lt;/code&gt; is based on Spring Boot &lt;code&gt;2.1.15.RELEASE&lt;/code&gt; and SBDG &lt;code&gt;1.2.8.RELEASE&lt;/code&gt; is based on Spring Boot &lt;code&gt;2.2.8.RELEASE&lt;/code&gt;.  Bits for both releases are &lt;a href="https://repo1.maven.org/maven2/org/springframework/geode/spring-geode-starter/"&gt;available&lt;/a&gt; in Maven Central.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;As a friendly reminder, please refer to the &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/wiki/Spring-Boot-for-Apache-Geode-and-Pivotal-GemFire-Version-Compatibility-Matrix#version-compatibility-matrix"&gt;Version Compatibility Matrix&lt;/a&gt; to see how SBDG aligns with Spring, Apache Geode and VMware GemFire versions.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;SBDG &lt;code&gt;1.1.x&lt;/code&gt; is fixed on Spring Data Lovelace, which is in support until October 2020.  However, given SBDG &lt;code&gt;1.1.x&lt;/code&gt; is based on Spring Data Lovelace, which is based on Apache Geode 1.6.0 and VMware GemFire 9.5.4, both of which have reached their EOL, the SBDG &lt;code&gt;1.1.x&lt;/code&gt; release line will effectively only pick up dependency updates until October when SD Lovelace reaches EOL.  No new development is happening SBDG &lt;code&gt;1.1.x&lt;/code&gt;.  You are therefore encouraged to upgrade to SBDG &lt;code&gt;1.2.8.RELEASE&lt;/code&gt; or &lt;code&gt;1.3.0.RELEASE&lt;/code&gt; as soon as possible.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can start a new Spring Boot &lt;code&gt;2.2.8.RELEASE&lt;/code&gt; project using Apache Geode at &lt;a href="https://start.spring.io/#!platformVersion=2.2.8.RELEASE&amp;amp;dependencies=geode"&gt;start.spring.io&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;See the &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/blob/1.2.8.RELEASE/spring-geode/src/main/resources/changelog.txt#L7-L29"&gt;changelog&lt;/a&gt; for more details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="feedback"&gt;&lt;a class="anchor" href="#feedback"&gt;&lt;/a&gt;Feedback&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Feedback is welcomed and appreciated.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/pulls"&gt;PR&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot for Apache Geode &amp; VMware GemFire 1.3.0.RELEASE Available!</title>
-    <link rel="alternate" href="https://spring.io/blog/2020/06/15/spring-boot-for-apache-geode-vmware-gemfire-1-3-0-release-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>John Blum</name>
-    </author>
-    <id>tag:spring.io,2020-06-15:4105</id>
-    <updated>2020-06-15T17:17:38Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the Spring, Apache Geode and VMware GemFire communities, it is my pleasure to announce the release of &lt;em&gt;Spring Boot for Apache Geode and VMware GemFire&lt;/em&gt; (SBDG) &lt;code&gt;1.3.0.RELEASE&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This release builds on Spring Boot &lt;code&gt;2.3.0.RELEASE&lt;/code&gt; along with the latest Spring Framework (5.2.6), Spring Data (Neumann-GA/2.3.0) and Spring Session (Dragonfruit-GA/2.3.0) bits.  In addition, SBDG &lt;code&gt;1.3.0.RELEASE&lt;/code&gt; pulls in &lt;em&gt;Spring Test for Apache Geode &amp;amp; VMware GemFire&lt;/em&gt; (STDG) &lt;code&gt;0.0.16.RELEASE&lt;/code&gt; giving users more fine-grained control for resource and mock object cleanup.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;You can &lt;a href="https://start.spring.io/#!platformVersion=2.3.0.RELEASE&amp;amp;dependencies=geode"&gt;start&lt;/a&gt; a new Spring Boot project using Apache Geode from &lt;a href="https://start.spring.io"&gt;start.spring.io&lt;/a&gt; using &lt;em&gt;Spring Initializer&lt;/em&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="whats-new"&gt;&lt;a class="anchor" href="#whats-new"&gt;&lt;/a&gt;What&amp;#8217;s New&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The 1.3 GA focused on giving developers the means to load data into the cache during development.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;This puts Spring Boot for Apache Geode on par with Spring Boot&amp;#8217;s support for SQL database initialization. However, SBDG does not stop there!  Additionally, SBDG provides the capability to export data on application shutdown.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Both import and export capabilities are highly useful during development to test, debug and validate the functionality of your Spring Boot applications.  It is also useful for moving data between environments, such as QA back to DEV, for further testing when issues arise.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Learn more about &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.3.x/reference/html5/#geode-data-working"&gt;Cache Data Import/Export&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;SBDG also includes several useful extensions to Apache Geode&amp;#8217;s API, which have now been formally &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.3.x/reference/html5/#geode-api-extensions"&gt;documented&lt;/a&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Additionally, SBDG now includes &lt;a href="https://docs.spring.io/spring-boot-data-geode-build/1.3.x/reference/html5/#geode-docker"&gt;documentation&lt;/a&gt; for running and using Apache Geode in a Docker Container.  This compliments Spring Boot&amp;#8217;s support for containerization as of the 2.3 release line.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;While these are the main highlights from the 1.3 release, you are welcome to review the &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/blob/1.3.0.RELEASE/spring-geode/src/main/resources/changelog.txt#L7-L37"&gt;changelog&lt;/a&gt; for full release details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="whats-next"&gt;&lt;a class="anchor" href="#whats-next"&gt;&lt;/a&gt;What&amp;#8217;s Next&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Look for a &lt;code&gt;1.3.1.RELEASE&lt;/code&gt; shortly, tentatively scheduled for Weds, 6/24, as we make further refinements to the Cache Data Import/Export feature, such as the ability to specify resource locations on import and export.  This is useful in a managed, cloud environment (e.g. PCF) where a filesystem is not always readily available.  While JSON files can be included in your app JAR for imports, exporting data is a different story.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;While it is not specific to SBDG, the STDG project will include additional refinements to GemFire/Geode resource cleanup between test cases and test classes, enabled with a new annotation, &lt;code&gt;@EnableGemFireGarbageCollector&lt;/code&gt;. This feature will trigger a new STDG release that will be picked up in 1.3.1.  More details to follow.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="conclusion"&gt;&lt;a class="anchor" href="#conclusion"&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Feedback on this release is welcomed and appreciated.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-boot-data-geode/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot-data-geode/pulls"&gt;PR&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-data-gemfire"&gt;StackOverflow&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>
