@@ -16,6 +16,7 @@ hs_err_pid*
 .project
 .settings/
 .MF
+.properties
 
 # Intellij
 .idea/
